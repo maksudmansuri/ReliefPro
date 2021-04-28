@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChildcareActivity"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:id="@+id/back"
+        android:padding="10dp"
+        app:drawableStartCompat="@drawable/back" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChildCare"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_disease_title"
+        android:textSize="24sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/toplayout"
+        android:backgroundTint="#28318C"
+        android:textColor="@android:color/white"/>
+
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search by child Age/vaccine name"
+        android:textAlignment="viewEnd"
+        android:theme="@style/AppTheme"
+        android:id="@+id/searchView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/searchbg"
+        android:backgroundTint="#D4D7DA"
+        android:layout_below="@+id/tv_disease_title"/>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card1"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="6dp"
+    android:layout_below="@+id/searchView"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cvi1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/vc3" />
+
+        <TextView
+            android:id="@+id/vch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/cvi1"
+            android:text="BCG"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/vcd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vch1"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/cvi1"
+            android:textColor="#4582B7"
+            android:textSize="12sp"
+            android:text=">> At birth or as early as possible till one year of age."
+            android:textStyle="bold"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:id="@+id/btn_view_vc1"
+            android:text="View Vaccine packages"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#28318C"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/vcd1"
+            android:layout_marginTop="14dp"
+
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card2"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvi2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/vc2" />
+
+            <TextView
+                android:id="@+id/vch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/cvi2"
+                android:text="Hepatitis B Birth dose"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/vcd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vch2"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/cvi2"
+                android:textColor="#4582B7"
+                android:textSize="12sp"
+                android:text=">> At birth or as early as possible within 24 hours"
+                android:textStyle="bold"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:id="@+id/btn_view_vc2"
+                android:text="View Vaccine packages"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#28318C"
+                android:textAllCaps="false"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/vcd2"
+                android:layout_marginTop="14dp"
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/card2"
+        app:cardBackgroundColor="#E1E1E1"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvi3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/vc1" />
+
+            <TextView
+                android:id="@+id/vch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/cvi3"
+                android:text="OPV Birth dose"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/vcd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vch3"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/cvi3"
+                android:textColor="#4582B7"
+                android:textSize="12sp"
+                android:text=">> At birth or as early as possible within the first 15 days"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/connfirmedicon"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp">
+
+            </ImageView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:id="@+id/btn_view_vc3"
+                android:text="Already purchased"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#33364B"
+                android:textAllCaps="false"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/vcd3"
+                android:layout_marginTop="14dp"
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/card3"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvi4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/vc4" />
+
+            <TextView
+                android:id="@+id/vch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/cvi4"
+                android:text="Rota Virus Vaccine"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/vcd4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vch4"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/cvi4"
+                android:textColor="#4582B7"
+                android:textSize="12sp"
+                android:text=">> At 6 weeks, 10 weeks and 14 weeks "
+                android:textStyle="bold"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:id="@+id/btn_view_vc4"
+                android:text="View Vaccine packages"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#28318C"
+                android:textAllCaps="false"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/vcd4"
+                android:layout_marginTop="16dp"
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

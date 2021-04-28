@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:id="@+id/rel1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+       android:text="Go Back"
+        android:id="@+id/back"
+        android:drawablePadding="4dp"
+        android:layout_marginEnd="4dp"
+        app:drawableStartCompat="@drawable/back" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/profilepagebg"
+    android:id="@+id/rel2"
+    android:backgroundTint="#28318C"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_img"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/profile"
+        app:civ_circle_background_color="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_name"
+        android:text="Abhi"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_location"
+        android:text="Vadodara,Gujarat."
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/profile_name"
+        android:layout_marginTop="44dp"
+        android:drawablePadding="4dp"
+
+       android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:layout_marginStart="20dp"/>
+</RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel2"
+     android:layout_alignParentEnd="true"
+
+        android:text="Edit Profile"
+        android:drawablePadding="8dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:drawableEnd="@drawable/ic_baseline_edit_24"
+        android:backgroundTint="#28318C"
+        android:background="@drawable/toplayout"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel3"
+        android:layout_below="@+id/rel2"
+         android:layout_marginTop="60dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_name"
+            android:text="Full Name : "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_no"
+            android:text="Contact no.: "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_name"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_email"
+            android:text="Email : "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_no"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_dob"
+            android:text="Date of Birth : "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_email"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_gen"
+            android:text="Gender : "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_dob"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_blood_grp"
+            android:text="Blood Group : "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_gen"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_weight"
+            android:text="Weight (kg) : "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_blood_grp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_height"
+            android:text="Height (ft) : "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#FF4585EF"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_weight"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel4"
+        android:layout_below="@+id/rel2"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="110dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_name1"
+            android:text="Abhishek"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_no1"
+            android:text="+91 7234534555 "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_name1"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_email1"
+            android:text="example@gmail.com"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_no1"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_dob1"
+            android:text="07/09/1999 "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_email1"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_gen1"
+            android:text="Male"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_dob1"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_contact_blood_grp1"
+            android:text="O+ "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_gen1"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_weight1"
+            android:text="70 kg"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_contact_blood_grp1"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_height1"
+            android:text="6.1 ft"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/person_weight1"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottomlayout"
+
+        android:backgroundTint="#28318C"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProHeal"
+            android:id="@+id/pro1"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="80dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

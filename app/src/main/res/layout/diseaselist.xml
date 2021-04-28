@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="6dp"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/card_disease_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/corona" />
+
+        <TextView
+            android:id="@+id/tv_disease_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/card_disease_img"
+            android:text="Corona"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_disease_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_disease_name"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/card_disease_img"
+            android:drawablePadding="4dp"
+            android:textColor="#4582B7"
+            android:text="View Symptoms"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/arrow_right" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:id="@+id/btn_view_hospitals"
+            android:text="View Hospitals"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#28318C"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:textSize="12sp"
+           android:layout_alignParentEnd="true"
+
+            android:layout_below="@id/tv_disease_schedule"
+            android:layout_marginTop="14dp"
+
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

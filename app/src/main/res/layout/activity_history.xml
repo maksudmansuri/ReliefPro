@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:id="@+id/back"
+        app:drawableStartCompat="@drawable/back" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_disease_title"
+        android:textSize="24sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/toplayout"
+        android:backgroundTint="#28318C"
+        android:textColor="@android:color/white"/>
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search by Date/Item name"
+        android:textAlignment="viewEnd"
+        android:theme="@style/AppTheme"
+        android:id="@+id/searchView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/searchbg"
+        android:backgroundTint="#D4D7DA"
+        android:layout_below="@+id/tv_disease_title"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/searchView"
+        android:id="@+id/card1"
+        android:layout_marginTop="5dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_lab_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/injection" />
+
+            <TextView
+                android:id="@+id/tv_lab_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/card_lab_img"
+                android:text="Vaccine Appointment"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_lab_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/card_lab_img"
+                android:textColor="#4582B7"
+
+                android:text="Purchased"
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                android:drawableStart="@drawable/connfirmedicon"/>
+
+            <TextView
+                android:id="@+id/tv_lab_location1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name"
+                android:layout_marginTop="40dp"
+               android:layout_marginEnd="20dp"
+                android:textColor="#4582B7"
+                android:layout_alignParentEnd="true"
+                android:text="Mon, 08/04/2021"
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+                android:drawableStart="@drawable/calender"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_lab_timing"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@id/card_lab_img"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#28318C"
+                android:textSize="14sp"
+                android:text="750 INR"
+
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+ />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:text="Repeat"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#28318C"
+                android:background="@drawable/btnbg"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/card1"
+        android:id="@+id/card2"
+
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_lab_img2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/bd2" />
+
+            <TextView
+                android:id="@+id/tv_lab_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/card_lab_img2"
+                android:text="Advance Body Test"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_lab_location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name2"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/card_lab_img2"
+                android:textColor="#FF6E40"
+                android:text="Pending"
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                android:drawableStart="@drawable/infoicon"/>
+            <TextView
+                android:id="@+id/tv_lab_location4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name2"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="#4582B7"
+                android:layout_alignParentEnd="true"
+                android:text="Fri, 21/04/2021"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/calender"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_lab_timing2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name2"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@id/card_lab_img2"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#4582B7"
+                android:textSize="14sp"
+                android:text="1500 INR"
+
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:text="Repeat"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_alignRight="@+id/tv_lab_name2"
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#28318C"
+                android:background="@drawable/btnbg"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/card2"
+        android:id="@+id/card3"
+
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_lab_img3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/vc2" />
+
+            <TextView
+                android:id="@+id/tv_lab_name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/card_lab_img3"
+                android:text="OBP vaccine "
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_lab_location3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name3"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/card_lab_img3"
+                android:textColor="#4582B7"
+                android:text="Failed"
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                app:drawableStartCompat="@drawable/failedicon" />
+            <TextView
+                android:id="@+id/tv_lab_location5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name3"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="#4582B7"
+                android:layout_alignParentEnd="true"
+
+                android:text="Mon, 21/04/2021"
+                android:drawableStart="@drawable/calender"
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_lab_timing3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lab_name3"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@id/card_lab_img3"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#4582B7"
+                android:text="300 INR"
+                android:textStyle="bold"
+
+                android:drawablePadding="4dp"
+ />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:text="Repeat"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_alignRight="@+id/tv_lab_name3"
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#28318C"
+                android:background="@drawable/btnbg"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

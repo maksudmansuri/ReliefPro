@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Quick Access">
+        <menu>
+            <group>
+                <item android:id="@+id/nav_item_one"
+                    android:icon="@drawable/account"
+                    android:title="My Profile" />
+                <item android:id="@+id/nav_item_two"
+                    android:icon="@drawable/appointment"
+                    android:title="Appointments" />
+                <item android:id="@+id/nav_item_three"
+                    android:icon="@drawable/booking"
+                    android:title="Test Bookings" />
+                <item android:id="@+id/nav_item_four"
+                    android:icon="@drawable/orders"
+                    android:title="Orders" />
+                <item android:id="@+id/nav_item_five"
+                android:icon="@drawable/doctor"
+                    android:title="Doctor Consultations" />
+                <item android:id="@+id/nav_item_six"
+                    android:icon="@drawable/history"
+                    android:title="History" />
+                <item android:id="@+id/nav_item_seven"
+                    android:icon="@drawable/reminders"
+                    android:title="Reminders" />
+                <item android:id="@+id/nav_item_eight"
+                    android:icon="@drawable/schedule"
+                    android:title="Vaccination Schedule" />
+                <item android:id="@+id/nav_item_nine"
+                    android:icon="@drawable/payment"
+                    android:title="Payments" />
+                <item android:id="@+id/nav_item_ten"
+                    android:icon="@drawable/readupdate"
+                    android:title="Read new Updates" />
+
+            </group>
+
+
+        </menu>
+    </item>
+
+    <item android:title="App">
+        <menu>
+            <group>
+                <item android:id="@+id/nav_item_eleven"
+                    android:icon="@drawable/helpicon"
+                    android:title="Help" />
+                <item android:id="@+id/nav_item_twelve"
+                    android:icon="@drawable/ic_baseline_settings_24"
+                    android:title="Settings" />
+                <item android:id="@+id/nav_item_thirteen"
+                    android:icon="@drawable/ratingicon"
+                    android:title="Ratings" />
+                <item android:id="@+id/nav_item_fourteen"
+                    android:icon="@drawable/ic_baseline_info_24"
+                    android:title="About Company" />
+                <item android:id="@+id/nav_item_fifteen"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    android:title="Log Out/Sign Out" />
+
+
+            </group>
+
+
+        </menu>
+    </item>
+
+
+
+</menu>
+

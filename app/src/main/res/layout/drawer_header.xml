@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:background="#28318C"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel2"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:id="@+id/drawer_profileImage"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_name"
+        android:text="Abhishek "
+        android:layout_toEndOf="@+id/drawer_profileImage"
+        android:layout_marginTop="26dp"
+        android:padding="3dp"
+        android:layout_marginStart="18dp"
+
+
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_view"
+        android:text=">> View Profile "
+
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/drawer_profileImage"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_edit"
+        android:text=">> Edit Profile"
+
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/profile_view"
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+       >
+        <TextView
+            android:id="@+id/header_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pro."
+            android:textColor="@android:color/white"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/header_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heal"
+            android:textSize="20sp"
+            android:layout_marginStart="54dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

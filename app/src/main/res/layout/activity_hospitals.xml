@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HospitalsActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:id="@+id/back"
+        app:drawableStartCompat="@drawable/back" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospitals"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_disease_title"
+        android:textSize="24sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/toplayout"
+        android:backgroundTint="#28318C"
+        android:textColor="@android:color/white"/>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search by Hospital Name"
+        android:textAlignment="viewEnd"
+        android:theme="@style/AppTheme"
+        android:id="@+id/searchView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/searchbg"
+        android:backgroundTint="#D4D7DA"
+        android:layout_below="@+id/tv_disease_title"/>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/scroll"
+      android:layout_below="@+id/searchView"
+      android:layout_marginTop="6dp">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+
+       >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hs1"
+                android:scaleType="centerCrop"
+                android:layout_margin="8dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heart-care Hospital"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Manjalpur, Vadodara."
+                    android:textSize="16sp"
+                    android:drawablePadding="4dp"
+
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="24/7 open"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+                    app:drawableStartCompat="@drawable/calender" />
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="View Details"
+
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="28dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_left"
+                    android:backgroundTint="#28318C"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:text="Book Appointment"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="18dp"
+                    android:padding="8dp"
+
+                    android:backgroundTint="#28318C"
+                    android:background="@drawable/button_right"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_below="@+id/card"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hs2"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="8dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Silver Star Hospital"
+                        android:textSize="24sp"
+
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Akota, Vadodara."
+                        android:textSize="16sp"
+                        android:drawablePadding="4dp"
+
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="24/7 open"
+                        android:textSize="16sp"
+                        android:drawablePadding="8dp"
+                        android:layout_marginStart="5dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:drawableStartCompat="@drawable/calender" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="View Details"
+                    android:padding="4dp"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="28dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_left"
+                    android:backgroundTint="#28318C"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:text="Book Appointment"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="18dp"
+                    android:padding="8dp"
+
+                    android:backgroundTint="#28318C"
+                    android:background="@drawable/button_right"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_below="@+id/card2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hs3"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="8dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="We-Care Hospital"
+                        android:textSize="24sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Naroda,Ahemdabad."
+                        android:textSize="16sp"
+                        android:drawablePadding="4dp"
+
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="24/7 open"
+                        android:textSize="16sp"
+                        android:drawablePadding="8dp"
+                        android:layout_marginStart="5dp"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:drawableStartCompat="@drawable/calender" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="View Details"
+                    android:padding="4dp"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="28dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_left"
+                    android:backgroundTint="#28318C"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:text="Book Appointment"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="18dp"
+                    android:padding="8dp"
+
+                    android:backgroundTint="#28318C"
+                    android:background="@drawable/button_right"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_below="@+id/card3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hs1"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="8dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SSG Hospital"
+                        android:textSize="24sp"
+
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Manjalpur, Vadodara."
+                        android:textSize="16sp"
+                        android:drawablePadding="8dp"
+
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="24/7 open"
+                        android:textSize="16sp"
+                        android:drawablePadding="8dp"
+
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:drawableStartCompat="@drawable/calender" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="View Details"
+                    android:padding="4dp"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="28dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_left"
+                    android:backgroundTint="#28318C"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:text="Book Appointment"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="18dp"
+                    android:padding="8dp"
+
+                    android:backgroundTint="#28318C"
+                    android:background="@drawable/button_right"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+   </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>

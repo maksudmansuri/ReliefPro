@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity"
+>
+<ImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/otp2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:text="Verify Its you."
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#3D4051"
+
+        android:layout_marginTop="240dp"/>
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7A7575"
+       android:layout_below="@+id/tv1"
+        android:background="@drawable/custom_btn_reg"
+        android:textColorHint="#7A7575"
+        android:layout_marginTop="35dp"
+        android:textCursorDrawable="@android:color/holo_blue_dark"
+        android:maxLength="4"
+        android:hint="Enter OTP"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:inputType="number"
+        android:padding="8dp"
+        android:drawablePadding="10dp"
+
+        android:singleLine="false"
+        android:autofillHints="" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0C367B"
+        android:text="Resend OTP"
+        android:layout_below="@+id/otp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_otp"
+        android:text="Submit OTP"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:includeFontPadding="true"
+        android:fontFamily="sans-serif"
+        android:textColor="#FEFCFC"
+        android:layout_marginLeft="17dp"
+        android:textAllCaps="false"
+        android:padding="8dp"
+        android:background="@drawable/btnbg"
+        android:backgroundTint="#FF4585EF"
+        android:layout_marginRight="17dp"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="80dp"
+        />
+
+</RelativeLayout>

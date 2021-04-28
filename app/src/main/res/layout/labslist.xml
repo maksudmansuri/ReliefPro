@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="6dp"
+
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/card_lab_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/lab1" />
+
+        <TextView
+            android:id="@+id/tv_lab_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/card_lab_img"
+            android:text="Atmiya Pathology"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_lab_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_lab_name"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/card_lab_img"
+            android:textColor="#4582B7"
+            android:text="Vadodara."
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/tv_lab_timing"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_lab_name"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/card_lab_img"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="#4582B7"
+            android:textSize="10sp"
+            android:text=" Mon-Fri ,9AM - 6PM"
+            android:textStyle="bold"
+            android:drawablePadding="4dp"
+           android:layout_toStartOf="@+id/btn_view_hospitals"
+            app:drawableStartCompat="@drawable/calender" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:id="@+id/btn_view_hospitals"
+            android:text="Test Available in Lab"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#28318C"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_lab_location"
+            android:layout_marginTop="14dp"
+
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
