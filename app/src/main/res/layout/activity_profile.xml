@@ -13,9 +13,12 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="70dp"
         android:background="@drawable/button"
-        android:padding="10dp"
+        android:padding="8dp"
+
        android:text="Go Back"
         android:id="@+id/back"
+        android:textColor="#28318C"
+        android:textStyle="bold"
         android:drawablePadding="4dp"
         android:layout_marginEnd="4dp"
         app:drawableStartCompat="@drawable/back" />

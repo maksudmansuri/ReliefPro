@@ -1,22 +1,19 @@
 package com.unique_upgrade.proHeal;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
-
 import android.os.Bundle;
-
-
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
@@ -142,10 +139,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.nav_item_one:
-                    Intent profileIntent=new Intent(MainActivity.this,ProfileActivity.class);
-                    startActivity(profileIntent);
-                        break;
+
                     case R.id.nav_item_fifteen:
                         getSharedPreferences("ProHeal",MODE_PRIVATE).edit().putString("key","logout").commit();
                         Intent signOutIntent=new Intent(MainActivity.this,LoginActivity.class);
@@ -174,13 +168,27 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
 
         //toolbar
-      final  androidx.appcompat.widget.Toolbar my_toolbar=findViewById(R.id.main_page_toolbar);
+      final  Toolbar my_toolbar=findViewById(R.id.main_page_toolbar);
         setSupportActionBar(my_toolbar);
         Objects.requireNonNull(getSupportActionBar()).setTitle("ProHeal");
 
         drawer= findViewById(R.id.drawerLayout);
+
+
+        //nav view
         navigationView=findViewById(R.id.drawer);
-        navigationView.setItemIconTintList(null);
+        View hView =  navigationView.inflateHeaderView(R.layout.drawer_header);
+        TextView tv_view_profile =hView.findViewById(R.id.header_view_profile);
+     //   ImageView img_header = hView.findViewById(R.id.drawer_profileImage);
+    //    img_header .setImageResource();
+        tv_view_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent profileIntent=new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(profileIntent);
+
+            }
+        });
 
         //toggle
         actionBarDrawerToggle=new ActionBarDrawerToggle(MainActivity.this,drawer,my_toolbar

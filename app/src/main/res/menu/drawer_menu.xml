@@ -3,9 +3,7 @@
     <item android:title="Quick Access">
         <menu>
             <group>
-                <item android:id="@+id/nav_item_one"
-                    android:icon="@drawable/account"
-                    android:title="My Profile" />
+
                 <item android:id="@+id/nav_item_two"
                     android:icon="@drawable/appointment"
                     android:title="Appointments" />

@@ -435,12 +435,12 @@
                     android:text="Read About Health"
                     android:layout_centerHorizontal="true"
                     android:id="@+id/top_events"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
                     android:textStyle="bold"
-                    android:paddingStart="30dp"
-                    android:paddingEnd="30dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:paddingBottom="10dp"
                     android:paddingTop="10dp"
                     android:background="@drawable/toplayout"
@@ -458,6 +458,6 @@
         android:layout_gravity="start"
         android:id="@+id/drawer"
         app:menu="@menu/drawer_menu"
-        app:headerLayout="@layout/drawer_header"
+
         />
 </androidx.drawerlayout.widget.DrawerLayout>

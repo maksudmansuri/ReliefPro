@@ -38,7 +38,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/profile_view"
+        android:id="@+id/header_view_profile"
         android:text=">> View Profile "
 
         android:layout_marginTop="2dp"
@@ -52,13 +52,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/profile_edit"
+        android:id="@+id/header_edit_profile"
         android:text=">> Edit Profile"
 
         android:layout_marginTop="2dp"
         android:padding="3dp"
         android:textColor="@android:color/white"
-        android:layout_below="@+id/profile_view"
+        android:layout_below="@+id/header_view_profile"
         android:layout_marginStart="18dp"
         android:textStyle="bold"
         android:textSize="12sp"
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="Heal"
             android:textSize="20sp"
-            android:layout_marginStart="54dp"
+            android:layout_marginStart="48dp"
             android:textColor="@android:color/white"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
