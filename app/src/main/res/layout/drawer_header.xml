@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/header"
-    android:background="#28318C"
+    android:background="#FFF"
 
     >
 <RelativeLayout
@@ -21,76 +21,52 @@
        />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/profile_name"
-        android:text="Abhishek "
+        android:text="Abhishek"
         android:layout_toEndOf="@+id/drawer_profileImage"
         android:layout_marginTop="26dp"
-        android:padding="3dp"
+
         android:layout_marginStart="18dp"
-
-
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="#28318C"
         android:textSize="18sp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/header_view_profile"
-        android:text=">> View Profile "
+        android:text="View &amp; Edit Profile "
+        android:layout_toEndOf="@+id/drawer_profileImage"
 
-        android:layout_marginTop="2dp"
         android:padding="3dp"
-        android:textColor="@android:color/white"
+        android:textColor="#828181"
         android:layout_marginStart="18dp"
         android:textStyle="bold"
-        android:layout_below="@+id/drawer_profileImage"
+        android:layout_below="@+id/profile_name"
         android:textSize="12sp"
         />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/header_edit_profile"
-        android:text=">> Edit Profile"
 
-        android:layout_marginTop="2dp"
-        android:padding="3dp"
-        android:textColor="@android:color/white"
-        android:layout_below="@+id/header_view_profile"
-        android:layout_marginStart="18dp"
-        android:textStyle="bold"
-        android:textSize="12sp"
-        />
 </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rel2"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
+
        >
-        <TextView
-            android:id="@+id/header_Text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="pro."
-            android:textColor="@android:color/white"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="10dp"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            />
-        <TextView
+
+        <ImageView
             android:id="@+id/header_text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Heal"
-            android:textSize="20sp"
-            android:layout_marginStart="48dp"
-            android:textColor="@android:color/white"
-            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logoinmenu"
+
+        android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
             android:textStyle="bold"
             />
 

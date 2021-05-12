@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HistoryActivity">
+    tools:context="com.unique_upgrade.ReliefPro.HistoryActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,18 +34,21 @@
         android:textColor="@android:color/white"/>
 
 
-    <SearchView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:queryHint="Search by Date/Item name"
-        android:textAlignment="viewEnd"
+        android:textAlignment="viewStart"
+        android:inputType="textShortMessage"
         android:theme="@style/AppTheme"
         android:id="@+id/searchView"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/searchbg"
+        android:background="@drawable/custom_btn_reg"
         android:backgroundTint="#D4D7DA"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
         android:layout_below="@+id/tv_disease_title"/>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -128,7 +131,7 @@
                 android:layout_toEndOf="@id/card_lab_img"
                 android:paddingStart="4dp"
                 android:paddingEnd="4dp"
-                android:textColor="#28318C"
+                android:textColor="#4582B7"
                 android:textSize="14sp"
                 android:text="750 INR"
 

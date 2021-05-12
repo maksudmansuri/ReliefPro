@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".TestActivity"
+    tools:context="com.unique_upgrade.ReliefPro.TestActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
         android:layout_width="wrap_content"
@@ -29,21 +29,24 @@
         android:paddingBottom="12dp"
         android:paddingTop="20dp"
         android:background="@drawable/toplayout"
-        android:backgroundTint="#4585EF"
+        android:backgroundTint="#28318C"
         android:textColor="@android:color/white"/>
 
-    <SearchView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:queryHint="Search by area name"
-        android:textAlignment="viewEnd"
+        android:inputType="textShortMessage"
+        android:textAlignment="viewStart"
         android:theme="@style/AppTheme"
         android:id="@+id/searchView"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/searchbg"
+        android:background="@drawable/custom_btn_reg"
         android:backgroundTint="#D4D7DA"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
         android:layout_below="@+id/tv_disease_title"/>
     <ScrollView
         android:layout_width="match_parent"
@@ -142,7 +145,7 @@
                             android:paddingStart="28dp"
                             android:paddingEnd="18dp"
                             android:padding="8dp"
-                            android:backgroundTint="#4585EF"
+                            android:backgroundTint="#28318C"
                             android:background="@drawable/button_right"
                             />
                     </RelativeLayout>
@@ -234,7 +237,7 @@
                             android:paddingEnd="18dp"
                             android:padding="8dp"
 
-                            android:backgroundTint="#4585EF"
+                            android:backgroundTint="#28318C"
                             android:background="@drawable/button_right"
                             />
                     </RelativeLayout>
@@ -261,7 +264,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:layout_margin="8dp">
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
@@ -327,7 +331,7 @@
                             android:paddingEnd="18dp"
                             android:padding="8dp"
 
-                            android:backgroundTint="#4585EF"
+                            android:backgroundTint="#28318C"
                             android:background="@drawable/button_right"
                             />
                     </RelativeLayout>
@@ -354,7 +358,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:layout_margin="8dp">
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
@@ -420,7 +425,7 @@
                             android:paddingEnd="18dp"
                             android:padding="8dp"
 
-                            android:backgroundTint="#4585EF"
+                            android:backgroundTint="#28318C"
                             android:background="@drawable/button_right"
                             />
                     </RelativeLayout>

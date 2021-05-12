@@ -4,15 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="com.unique_upgrade.ReliefPro.MainActivity"
     android:id="@+id/drawerLayout"
 
     >
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,7 +15,7 @@
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             >
 
@@ -28,7 +23,7 @@
             <RelativeLayout
                 android:id="@+id/topArea"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="120dp"
 
                 >
                 <include layout="@layout/appbar_layout"
@@ -46,10 +41,10 @@
                     android:textStyle="bold"
                    android:layout_below="@+id/main_page_toolbar"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_alignParentStart="true"
-                    android:drawableStart="@drawable/ic_baseline_location_on_24"
-                    android:layout_marginStart="20dp"/>
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
 
             </RelativeLayout>
 
@@ -165,7 +160,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/childrencare"
+                            android:src="@drawable/childcareicon"
                             />
 
 
@@ -416,15 +411,17 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
-                android:background="@drawable/bottomlayout"
-                android:backgroundTint="#BBD4FE"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="bottom">
+
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginTop="40dp"
+                android:gravity="bottom"
+
+               >
                 <com.daimajia.slider.library.SliderLayout
                     android:id="@+id/slider"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-
+                    android:layout_marginTop="44dp"
                     >
 
 
@@ -438,12 +435,13 @@
                     android:textSize="18sp"
                     android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
+
                     android:textStyle="bold"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
                     android:paddingBottom="10dp"
                     android:paddingTop="10dp"
-                    android:background="@drawable/toplayout"
+                    android:background="@drawable/bottomlayout"
                     android:backgroundTint="#28318C"
                     android:textColor="@android:color/white"/>
 
@@ -454,7 +452,7 @@
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-
+        android:backgroundTint="@android:color/white"
         android:layout_gravity="start"
         android:id="@+id/drawer"
         app:menu="@menu/drawer_menu"

@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.unique_upgrade.proHeal">
+    package="com.unique_upgrade.ReliefPro">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_relief"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_relief_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestActivity"></activity>
-        <activity
-            android:name=".PharmacyActivity"
+        <activity android:name="com.unique_upgrade.ReliefPro.TestActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.unique_upgrade.ReliefPro.PharmacyActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".SplashScreenActivity">
+        <activity
+            android:name="com.unique_upgrade.ReliefPro.RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.unique_upgrade.ReliefPro.SplashScreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,34 +26,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OTPActivity"
+            android:name="com.unique_upgrade.ReliefPro.OTPActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.unique_upgrade.ReliefPro.LoginActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.unique_upgrade.ReliefPro.ProfileActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".HistoryActivity"
+            android:name="com.unique_upgrade.ReliefPro.HistoryActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".BodyCheckupActivity"
+            android:name="com.unique_upgrade.ReliefPro.BodyCheckupActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".ChildcareActivity"
+            android:name="com.unique_upgrade.ReliefPro.ChildcareActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".HospitalsActivity"
+            android:name="com.unique_upgrade.ReliefPro.HospitalsActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".LabsActivity"
+            android:name="com.unique_upgrade.ReliefPro.LabsActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".DiseaseActivity"
+            android:name="com.unique_upgrade.ReliefPro.DiseaseActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.unique_upgrade.ReliefPro.MainActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 

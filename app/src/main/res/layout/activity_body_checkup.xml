@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".BodyCheckupActivity"
+    tools:context="com.unique_upgrade.ReliefPro.BodyCheckupActivity"
     >
     <TextView
         android:layout_width="wrap_content"
@@ -36,18 +36,22 @@
 
 
 
-    <SearchView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:queryHint="Search by Age/Price "
-        android:textAlignment="viewEnd"
+        android:textAlignment="viewStart"
+        android:inputType="textShortMessage"
         android:theme="@style/AppTheme"
         android:id="@+id/searchView"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/searchbg"
+        android:background="@drawable/custom_btn_reg"
         android:backgroundTint="#D4D7DA"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+
         android:layout_below="@+id/tv_disease_title"/>
 
 

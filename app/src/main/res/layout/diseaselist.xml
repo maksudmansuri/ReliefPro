@@ -17,14 +17,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/card_disease_img"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/app_name"
             android:padding="5dp"
-            android:src="@drawable/corona" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/coronaconsulting" />
 
         <TextView
             android:id="@+id/tv_disease_name"
