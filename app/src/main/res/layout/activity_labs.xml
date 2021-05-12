@@ -37,7 +37,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Write area name/Test name"
+        android:hint="Write area name/Test name"
         android:textAlignment="viewStart"
         android:inputType="textShortMessage"
         android:theme="@style/AppTheme"
@@ -55,6 +55,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rec_labs"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="8dp"
         android:layout_below="@+id/searchView"/>
 </RelativeLayout>

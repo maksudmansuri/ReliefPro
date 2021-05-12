@@ -39,7 +39,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Search by child Age/vaccine name"
+        android:hint="Search by child Age/vaccine name"
         android:textAlignment="viewStart"
         android:inputType="textShortMessage"
         android:theme="@style/AppTheme"

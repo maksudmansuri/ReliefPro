@@ -39,7 +39,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Search by Age/Price "
+        android:hint="Search by Age/Price "
         android:textAlignment="viewStart"
         android:inputType="textShortMessage"
         android:theme="@style/AppTheme"

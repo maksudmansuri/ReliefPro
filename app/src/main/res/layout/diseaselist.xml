@@ -65,7 +65,8 @@
             android:background="@drawable/round_btn"
             android:backgroundTint="#28318C"
             android:textAllCaps="false"
-            android:padding="8dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:textSize="12sp"
            android:layout_alignParentEnd="true"
 

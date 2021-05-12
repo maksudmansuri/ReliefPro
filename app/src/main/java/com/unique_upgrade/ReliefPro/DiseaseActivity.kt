@@ -31,6 +31,20 @@ class DiseaseActivity : AppCompatActivity() {
         diseaseModelArrayList = ArrayList()
         diseaseModelArrayList.add(DiseaseModel("Corona Consulting",
                 "Headache,fever,throat pain...", R.drawable.coronaconsulting))
+
+        diseaseModelArrayList.add(DiseaseModel("General Physician", "Overall body problems..", R.drawable.general))
+
+
+        diseaseModelArrayList.add(DiseaseModel("Pediatrician", "Children diseases and problems..", R.drawable.pediatrition))
+
+        diseaseModelArrayList.add(DiseaseModel("Hair and Dermatology", "Hair and skin problems..", R.drawable.dermitology))
+
+
+        diseaseModelArrayList.add(DiseaseModel("Ayurveda", "Aayurvedic solution to all diseases", R.drawable.ayurveda))
+
+        diseaseModelArrayList.add(DiseaseModel("Cardiology", "Abnormality in heart beats..", R.drawable.cardiologyicon))
+
+
         diseaseModelArrayList.add(DiseaseModel("Sexology",
                 "Disease related to sexual organs..", R.drawable.sexology))
 
@@ -43,11 +57,15 @@ class DiseaseActivity : AppCompatActivity() {
         diseaseModelArrayList.add(DiseaseModel("Gynecology",
                 "Abnormal behaviour of sexual organs..", R.drawable.gynacicon))
 
+
         diseaseModelArrayList.add(DiseaseModel("Stomach & Digestion",
-                "Stomach, Digestive problems..", R.drawable.stomatch))
+                "Stomach, Digestive problems..", R.drawable.stomach))
 
         diseaseModelArrayList.add(DiseaseModel("Dental", "Tooth-ache, Pain in chewing food..", R.drawable.tooth))
-        diseaseModelArrayList.add(DiseaseModel("Cardiology", "Abnormality in heart beats..", R.drawable.cardiologyicon))
+
+
+
+
 
 
         val adapter = DiseaseAdapter(this, diseaseModelArrayList!!)

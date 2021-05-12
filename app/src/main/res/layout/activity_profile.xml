@@ -37,7 +37,7 @@
         android:id="@+id/profile_img"
         android:layout_alignParentEnd="true"
         android:layout_margin="8dp"
-        android:src="@drawable/profile"
+        android:src="@drawable/profileicon"
         app:civ_circle_background_color="@android:color/white"/>
 
     <TextView
