@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.unique_upgrade.ReliefPro.MainActivity"
     android:id="@+id/drawerLayout"
-
     >
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +22,6 @@
                 android:id="@+id/topArea"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-
                 >
                 <include layout="@layout/appbar_layout"
                     android:id="@+id/main_page_toolbar"
