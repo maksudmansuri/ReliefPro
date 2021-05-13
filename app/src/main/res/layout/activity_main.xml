@@ -42,7 +42,7 @@
                    android:layout_below="@+id/main_page_toolbar"
                     android:layout_marginTop="16dp"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="24dp"
                     app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
 
             </RelativeLayout>
@@ -76,7 +76,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/disease"
+                            android:src="@drawable/test3"
 
                             />
 
@@ -116,7 +116,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/labs"
+                            android:src="@drawable/test2"
 
 
                             />
@@ -252,7 +252,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/pharmacy"
+                            android:src="@drawable/test1"
 
 
                             />
@@ -271,50 +271,7 @@
                     />
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_history"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_margin="10dp"
-                    app:cardElevation="7dp"
-                    app:cardCornerRadius="360dp"
-                    app:cardBackgroundColor="#F8E9CE"
-                    >
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-
-                        >
-
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/patienthistory"
-
-
-                            />
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="History"
-
-                        android:textSize="12sp"
-                        android:layout_gravity="center_horizontal"
-                        android:textStyle="bold"
-
-                        />
-                </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -360,6 +317,50 @@
                         android:textSize="12sp"
                         android:layout_gravity="center_horizontal"
                         android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_history"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="360dp"
+                        app:cardBackgroundColor="#F8E9CE"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/historyicon"
+
+
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+
                         />
                 </LinearLayout>
                 <LinearLayout

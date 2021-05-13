@@ -83,7 +83,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/lab1"
+                            android:src="@drawable/pharmacyicon"
                             android:scaleType="centerCrop"
                            android:layout_margin="8dp"
 
@@ -143,7 +143,7 @@
                             android:textColor="@android:color/white"
                             android:text="Buy Now"
                             android:paddingStart="28dp"
-                            android:paddingEnd="18dp"
+                            android:paddingEnd="28dp"
                             android:padding="8dp"
                             android:backgroundTint="#28318C"
                             android:background="@drawable/button_right"
@@ -176,7 +176,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/lab2"
+                            android:src="@drawable/pharmacyicon"
                             android:scaleType="centerCrop"
                             android:layout_margin="8dp"
                             />
@@ -234,7 +234,7 @@
                             android:textColor="@android:color/white"
                             android:text="Buy Now"
                             android:paddingStart="28dp"
-                            android:paddingEnd="18dp"
+                            android:paddingEnd="28dp"
                             android:padding="8dp"
 
                             android:backgroundTint="#28318C"
@@ -269,7 +269,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/lab3"
+                            android:src="@drawable/pharmacyicon"
                             android:scaleType="centerCrop"
                             android:layout_margin="8dp"
                             />
@@ -328,7 +328,7 @@
                             android:textColor="@android:color/white"
                             android:text="Buy Now"
                             android:paddingStart="28dp"
-                            android:paddingEnd="18dp"
+                            android:paddingEnd="28dp"
                             android:padding="8dp"
 
                             android:backgroundTint="#28318C"
@@ -363,7 +363,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/lab4"
+                            android:src="@drawable/pharmacyicon"
                             android:scaleType="centerCrop"
                             android:layout_margin="8dp"
                             />
@@ -388,7 +388,7 @@
                                 android:layout_marginTop="8dp"
                                 android:text="Manjalpur, Vadodara."
                                 android:textSize="16sp"
-                                android:drawablePadding="8dp"
+                                android:drawablePadding="4dp"
 
                                 android:textAppearance="?attr/textAppearanceBody2"
                                 android:textColor="?android:attr/textColorSecondary"
@@ -421,7 +421,7 @@
                             android:textColor="@android:color/white"
                             android:text="Buy Now"
                             android:paddingStart="28dp"
-                            android:paddingEnd="18dp"
+                            android:paddingEnd="28dp"
                             android:padding="8dp"
 
                             android:backgroundTint="#28318C"

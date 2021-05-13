@@ -40,7 +40,7 @@
         android:text="View &amp; Edit Profile "
         android:layout_toEndOf="@+id/drawer_profileImage"
 
-        android:padding="3dp"
+
         android:textColor="#828181"
         android:layout_marginStart="18dp"
         android:textStyle="bold"
@@ -49,6 +49,7 @@
         />
 
 </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,19 +57,25 @@
         android:layout_alignParentEnd="true"
 
        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            />
 
         <ImageView
             android:id="@+id/header_text2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
             android:src="@drawable/logoinmenu"
-
-        android:layout_marginEnd="10dp"
-            android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
             android:textColor="@android:color/black"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
-            />
+            android:contentDescription="@string/logo" />
+
 
     </RelativeLayout>
 </RelativeLayout>
